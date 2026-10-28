@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercițiul 3 - Un buton și trei paragrafe</title>
+    <script>
+        function schimbaParagrafe() {
+            var p1 = document.getElementById("p1");
+            p1.innerHTML = "Acesta este paragraful 1";
+            p1.style.color = "yellow";
+            p1.style.backgroundColor = "blue";
+
+            var p2 = document.getElementById("p2");
+            p2.innerHTML = "Acesta este paragraful 2";
+            p2.style.color = "white";
+            p2.style.backgroundColor = "green";
+
+            var p3 = document.getElementById("p3");
+            p3.innerHTML = "Acesta este paragraful 3";
+            p3.style.color = "blue";
+            p3.style.backgroundColor = "pink";
+        }
+    </script>
+</head>
+<body>
+    <p id="p1">Paragraf inițial 1</p>
+    <p id="p2">Paragraf inițial 2</p>
+    <p id="p3">Paragraf inițial 3</p>
+
+    <button type="button" onclick="schimbaParagrafe()">Schimbă paragrafele</button>
+</body>
+</html>

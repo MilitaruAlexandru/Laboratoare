@@ -1,17 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <title>Militaru Alexandru – laboratoare</title>
-</head>
-<body>
-  <h1>Militaru Alexandru</h1>
-  <p>Programarea aplicațiilor web – subgrupa 1342B</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Militaru Alexandru Bogdan – laboratoare</title>
+    <style>
+      /* Formatarea listei neordonate */
+      ul.lista-laboratoare {
+        list-style-type: none; /* Ascunde bulinele */
+        padding: 0;
+        display: flex;
+        flex-direction: column; /* Așează butoanele pe verticală */
+        gap: 10px; /* Spațiu între butoane */
+      }
 
-  <h2>Laboratoare</h2>
-  <ul>
-    <li><a href="lab2/index.html">Laboratorul 2 – HTML si CSS</a></li>
-  </ul>
-  <a href="../index.html">Laboratoarele mele</a>
-</body>
+      /* Formatarea linkurilor ca butoane uniforme */
+      ul.lista-laboratoare li a {
+        display: block;
+        width: 300px; /* Lățime uniformă pentru toate butoanele */
+        background-color: #3498db; /* Culoare uniformă (albastru) */
+        color: white; /* Text alb */
+        text-align: center; /* Text centrat */
+        text-decoration: none; /* Fără subliniere */
+        padding: 12px; /* Spațiu interior */
+        border-radius: 8px; /* Colțuri rotunjite */
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        transition: background-color 0.3s; /* Tranziție lină pentru efectul de hover */
+      }
+
+      /* Schimbarea culorii la hover (trecerea cursorului) */
+      ul.lista-laboratoare li a:hover {
+        background-color: #2980b9; /* Albastru mai închis */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Militaru Alexandru Bogdan</h1>
+    <p>Programarea aplicațiilor web – subgrupa 1342B</p>
+
+    <h2>Laboratoare</h2>
+    <ul class="lista-laboratoare">
+      <li><a href="lab1/">Laboratorul 1 – HTML</a></li>
+      <li><a href="L2/index.html">Laboratorul 2: HTML si CSS</a></li>
+      <li><a href="Lab3/index.html">Laboratorul 3: HTML SI CSS</a></li>
+      <li><a href="Lab4/index.html">Laboratorul 4: HTML si CSS</a></li>
+      <li><a href="lab5/index.html">Laboratorul 5: HTML si CSS</a></li>
+    </ul>
+  </body>
 </html>

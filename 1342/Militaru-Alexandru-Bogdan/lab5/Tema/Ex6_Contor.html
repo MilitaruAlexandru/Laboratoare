@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercițiul 6 - Contor Bec</title>
+</head>
+<body>
+    <img id="bec" src="Bec stins.gif" alt="Bec" onclick="schimbaBec()">
+
+    <p id="mesaj">Becul a fost aprins de 0 ori.</p>
+
+    <script>
+        var contor = 0;
+
+        function schimbaBec() {
+            var bec = document.getElementById("bec");
+            console.log(bec.src);
+
+            if (bec.src.match("Bec%20stins.gif")) {
+                bec.src = "Bec aprins.gif";
+                contor = contor + 1;
+                document.getElementById("mesaj").innerHTML = "Becul a fost aprins de " + contor + " ori.";
+            } else {
+                bec.src = "Bec stins.gif";
+            }
+        }
+    </script>
+</body>
+</html>
